@@ -12,6 +12,7 @@ import MinusIcon from './svgs/icons/ic-minus.svg';
 import PlusIcon from './svgs/icons/ic-plus.svg';
 import SearchIcon from './svgs/icons/ic-search.svg';
 import NotificationIcon from './svgs/icons/ic-notification.svg';
+import FilterIcon from './svgs/icons/ic-filter.svg';
 import HomeAvatar from './svgs/illustrations/avatar.svg';
 import HandWave from './svgs/illustrations/hand-wave.svg';
 
@@ -31,6 +32,7 @@ export const svgAssets = {
   PlusIcon,
   SearchIcon,
   NotificationIcon,
+  FilterIcon,
   HandWave,
 };
 

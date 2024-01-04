@@ -9,6 +9,7 @@ export const colors = {
   colorsSecondarySecondary25: '#F0F5EC',
   colorsGrayGray800: '#090909',
   colorsPrimaryPrimary400: '#006D33',
+  colorsGrayGray50: '#BEBEBE',
 
   screenBackground: '#F8F8F8',
 };

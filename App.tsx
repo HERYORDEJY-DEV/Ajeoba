@@ -7,7 +7,7 @@
 
 import type {PropsWithChildren} from 'react';
 import React from 'react';
-import {StyleSheet, Text, useColorScheme, View} from 'react-native';
+import {StyleSheet, Text, TextInput, useColorScheme, View} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import RootNavigation from '~/navigation/RootNavigation.tsx';
@@ -45,6 +45,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 }
 
 function App(): React.JSX.Element {
+  // RN Text component default props
   setDefaultProps(Text, {
     style: {
       color: globalStyles.colors.colorsGrayGray800,
@@ -53,6 +54,20 @@ function App(): React.JSX.Element {
     },
     allowFontScaling: false,
   });
+
+  // RN TextInput component default props
+  setDefaultProps(TextInput, {
+    style: {
+      color: globalStyles.colors.colorsGrayGray800,
+      fontSize: 14,
+      fontFamily: globalStyles?.fontFamily.regular,
+      backgroundColor: 'transparent',
+    },
+    placeholderTextColor: globalStyles.colors.colorsGrayGray50,
+    underlineColorAndroid: 'transparent',
+    allowFontScaling: false,
+  });
+
   return (
     <>
       {/*<SafeAreaProvider initialMetrics={initialWindowMetrics}>*/}
