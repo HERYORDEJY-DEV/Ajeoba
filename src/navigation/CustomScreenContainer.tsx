@@ -5,7 +5,7 @@ import {useThemeMode} from '~/hooks/useThemeMode.ts';
 import {globalStyles} from '~/styles';
 
 interface Props extends PropsWithChildren {
-  style: ViewStyle;
+  style?: ViewStyle;
 }
 
 export default function CustomScreenContainer(props: Props): React.JSX.Element {
