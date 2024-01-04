@@ -1,18 +1,24 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  ViewProps,
+} from 'react-native';
 import {imageAssets, svgAssets} from '~/assets';
 import {globalStyles} from '~/styles';
 
 const {HomeNavBarAvatar} = imageAssets,
   {HomeAvatar, HandWave, NotificationIcon} = svgAssets;
 
-interface Props {
+interface Props extends ViewProps {
   //
 }
 
 export default function HomeNavBar(props: Props): React.JSX.Element {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, props.style]}>
       <View style={styles.left}>
         <HomeAvatar width={48} height={48} />
         <View style={styles.leftContent}>

@@ -6,7 +6,7 @@ import HomeNavBar from '~/components/screen/HomeNavBar.tsx';
 
 export default function Orders(): React.JSX.Element {
   return (
-    <CustomScreenContainer>
+    <CustomScreenContainer style={styles.screenContainer}>
       <HomeNavBar />
       <View style={styles.container}>
         <Text style={styles.title}>
@@ -18,13 +18,19 @@ export default function Orders(): React.JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  screenContainer: {
+    paddingHorizontal: 20,
+  },
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    fontSize: 100,
+    fontSize: 90,
     fontFamily: globalStyles.fontFamily.black,
+  },
+  navbar: {
+    marginHorizontal: 20,
   },
 });
