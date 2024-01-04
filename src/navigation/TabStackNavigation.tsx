@@ -7,6 +7,7 @@ import Home from '~/screens/Home.tsx';
 import Profile from '~/screens/Profile.tsx';
 import Wallet from '~/screens/Wallet.tsx';
 import Orders from '~/screens/Orders.tsx';
+import {globalStyles} from '~/styles';
 
 const {Screen, Navigator} = createBottomTabNavigator<TabStackParamList>();
 
@@ -16,7 +17,18 @@ export default function TabStackNavigation() {
       screenOptions={{
         headerShown: false,
       }}
-      tabBar={props => <TabBar {...props} />}>
+      tabBar={props => (
+        <TabBar
+          {...{
+            activeTintColor: globalStyles.colors.colorsPrimaryPrimary400,
+            inactiveTintColor: 'rgba(0, 0, 0, 0.50)',
+            tabBarStyle: {
+              backgroundColor: globalStyles.colors.colorsSecondarySecondary25,
+            },
+            ...props,
+          }}
+        />
+      )}>
       <Screen name={'Home'} component={Home} />
       <Screen name={'Orders'} component={Orders} />
       <Screen name={'Wallet'} component={Wallet} />

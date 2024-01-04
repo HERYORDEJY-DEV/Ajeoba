@@ -8,5 +8,7 @@ export const colors = {
   yellow: '#FFFF00',
   colorsSecondarySecondary25: '#F0F5EC',
   colorsGrayGray800: '#090909',
+  colorsPrimaryPrimary400: '#006D33',
+
   screenBackground: '#F8F8F8',
 };
