@@ -7,6 +7,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import CustomSearchInput from '~/components/inputs/CustomSearchInput.tsx';
 import IconButton from '~/components/buttons/IconButton.tsx';
 import {svgAssets} from '~/assets';
+import HomeProductsCarousel from '~/components/products/HomeProductsCarousel.tsx';
 
 const {FilterIcon} = svgAssets;
 
@@ -20,6 +21,7 @@ export default function Home(): React.JSX.Element {
         <CustomSearchInput placeholder="Search for products and inputs" />
         <IconButton iconElement={<FilterIcon />} />
       </View>
+      <HomeProductsCarousel />
     </View>
   );
 
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
   },
   headerSection: {
     backgroundColor: globalStyles.colors.white,
-    paddingHorizontal: 20,
+    // paddingHorizontal: 20,
   },
   searchWrapper: {
     flexDirection: 'row',

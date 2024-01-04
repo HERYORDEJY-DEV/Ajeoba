@@ -14,7 +14,6 @@ import {useAnimatedStyle, withTiming} from 'react-native-reanimated';
 import TabBarIndicator from '~/components/bottom-tab/TabBarIndicator.tsx';
 import {svgAssets} from '~/assets';
 
-const {width} = Dimensions.get('window');
 const {
   HomeTabActiveIcon,
   HomeTabIcon,
@@ -32,6 +31,7 @@ interface Props extends BottomTabBarProps {
 }
 
 export default function TabBar({state, navigation, ...props}: Props) {
+  const {width} = Dimensions.get('window');
   const {activeTintColor, inactiveTintColor} = props;
   const {routeNames, index: selectedTab} = state;
   const tabWidth = width / routeNames.length;

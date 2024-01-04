@@ -2,8 +2,6 @@ import React from 'react';
 import {Dimensions, StyleSheet, View, ViewStyle} from 'react-native';
 import Animated from 'react-native-reanimated';
 
-const {width} = Dimensions.get('window');
-
 type Props = {
   color: string;
   animatedStyle: ViewStyle;
@@ -11,6 +9,7 @@ type Props = {
 };
 
 export default function TabBarIndicator(props: Props) {
+  const {width} = Dimensions.get('window');
   return (
     <Animated.View
       style={[
