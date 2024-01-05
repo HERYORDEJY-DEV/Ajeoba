@@ -1206,6 +1206,13 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
+"@fawazahmed/react-native-read-more@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@fawazahmed/react-native-read-more/-/react-native-read-more-3.0.3.tgz#1325c00d7b65ecc17ae4802ae58de979eb98739d"
+  integrity sha512-dYaPFgHf0XLgrBOSVxXDQSdZ2pBCEGj3yhgw9J3HVII/hyG9mBYz6eh9WwQk1TyE/tX5bxA5rdXNyjgnEJNT+A==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"

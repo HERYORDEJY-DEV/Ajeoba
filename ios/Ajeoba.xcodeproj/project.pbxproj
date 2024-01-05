@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002C98D64D9B44D687803715 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B3439BBD0B462F91EFE6A8 /* Poppins-Italic.ttf */; };
 		00E356F31AD99517003FC87E /* AjeobaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AjeobaTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Ajeoba.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Ajeoba.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
@@ -56,6 +57,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-Ajeoba-AjeobaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ajeoba-AjeobaTests.release.xcconfig"; path = "Target Support Files/Pods-Ajeoba-AjeobaTests/Pods-Ajeoba-AjeobaTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0597908B8354B3EB62F4566 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		B6C2E125C5AF47BF86857AA7 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E2B3439BBD0B462F91EFE6A8 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../src/assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F77ACDC012074B3DA4382C1F /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				23C912FC751241C08475E1F3 /* Poppins-Medium.ttf */,
 				B6C2E125C5AF47BF86857AA7 /* Poppins-Regular.ttf */,
 				84D26A0AA144498A96824C62 /* Poppins-SemiBold.ttf */,
+				E2B3439BBD0B462F91EFE6A8 /* Poppins-Italic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				7583D638CE4B445EB16AA821 /* Poppins-Medium.ttf in Resources */,
 				445F408ECFFB4C29AB5D6CEA /* Poppins-Regular.ttf in Resources */,
 				EB69EB8A99E44437805F6C7D /* Poppins-SemiBold.ttf in Resources */,
+				002C98D64D9B44D687803715 /* Poppins-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
