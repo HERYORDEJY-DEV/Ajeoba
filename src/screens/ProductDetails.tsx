@@ -20,14 +20,7 @@ import QuantityButton from '~/components/buttons/QuantityButton.tsx';
 import PrimaryButton from '~/components/buttons/PrimaryButton.tsx';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-const {
-  StarFillIcon,
-  StarHalfIcon,
-  StarEmptyIcon,
-  FilterIcon,
-  ChevronUpIcon,
-  DownloadIcon,
-} = svgAssets;
+const {StarFillIcon, StarHalfIcon, StarEmptyIcon, DownloadIcon} = svgAssets;
 
 export default function ProductDetails(): React.JSX.Element {
   const safeAreaInset = useSafeAreaInsets();
@@ -419,5 +412,15 @@ const styles = StyleSheet.create({
     columnGap: 20,
     backgroundColor: globalStyles.colors.white,
     width: '100%',
+
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+
+    elevation: 4,
   },
 });

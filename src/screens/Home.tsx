@@ -27,11 +27,7 @@ export default function Home(): React.JSX.Element {
   );
 
   return (
-    <CustomScreenContainer
-      edges={['bottom']}
-      //
-    >
-      {/*{renderHeaderSection}*/}
+    <CustomScreenContainer edges={['left', 'right']}>
       <HomeProductsList headerComponent={renderHeaderSection} />
     </CustomScreenContainer>
   );

@@ -6,11 +6,10 @@ import {
   View,
   ViewProps,
 } from 'react-native';
-import {imageAssets, svgAssets} from '~/assets';
+import {svgAssets} from '~/assets';
 import {globalStyles} from '~/styles';
 
-const {HomeNavBarAvatar} = imageAssets,
-  {HomeAvatar, HandWave, NotificationIcon} = svgAssets;
+const {HomeAvatar, HandWave, NotificationIcon} = svgAssets;
 
 interface Props extends ViewProps {
   //

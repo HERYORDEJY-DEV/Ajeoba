@@ -1,16 +1,39 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import CustomScreenContainer from '~/navigation/CustomScreenContainer.tsx';
+import HomeNavBar from '~/components/screen/HomeNavBar.tsx';
+import {globalStyles} from '~/styles';
 
 export default function Profile(): React.JSX.Element {
   return (
-    <View style={styles.container}>
-      <Text>This is the Profile component</Text>
-    </View>
+    <CustomScreenContainer style={styles.screenContainer}>
+      <View style={[styles.navbarWrapper]}>
+        <HomeNavBar />
+      </View>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.title}>
+          The{'\n'}Profile{'\n'}screen
+        </Text>
+      </ScrollView>
+    </CustomScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    //
+  screenContainer: {
+    paddingHorizontal: 20,
   },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 90,
+    fontFamily: globalStyles.fontFamily.black,
+  },
+  navbar: {
+    marginHorizontal: 20,
+  },
+  navbarWrapper: {paddingTop: 24},
 });

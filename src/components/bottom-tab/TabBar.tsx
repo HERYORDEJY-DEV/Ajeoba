@@ -1,4 +1,3 @@
-// TabBar.tsx
 import React from 'react';
 import {
   Dimensions,

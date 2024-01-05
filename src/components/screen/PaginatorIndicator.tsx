@@ -35,8 +35,8 @@ export default function PaginatorIndicator({...props}: Props) {
           : props.backgroundColor ?? '#D9D9D9',
         {duration: 100},
       ),
-      height: isActive ? props.activeHeight ?? 7 : props.height ?? 7, // isActive ? props.activeSize ?? 10 :
-      width: isActive ? props.activeWidth ?? 19 : props.width ?? 7, //props.activeSize ?? 10 : props.size ?? 10,
+      height: isActive ? props.activeHeight ?? 7 : props.height ?? 7,
+      width: isActive ? props.activeWidth ?? 19 : props.width ?? 7,
       borderRadius: isActive
         ? props.activeBorderRadius ?? 12
         : props.borderRadius ?? 7,

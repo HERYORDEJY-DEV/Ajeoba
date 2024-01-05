@@ -1,7 +1,6 @@
 import React from 'react';
 import {TabStackParamList} from '~/navigation/types.ts';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {StyleSheet} from 'react-native';
 import TabBar from '~/components/bottom-tab/TabBar.tsx';
 import Home from '~/screens/Home.tsx';
 import Profile from '~/screens/Profile.tsx';
@@ -36,13 +35,3 @@ export default function TabStackNavigation() {
     </Navigator>
   );
 }
-
-const styles = StyleSheet.create({
-  icon: {
-    width: 20,
-    height: 20,
-  },
-  label: {
-    fontSize: 14,
-  },
-});

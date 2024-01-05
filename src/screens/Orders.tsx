@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import CustomScreenContainer from '~/navigation/CustomScreenContainer.tsx';
 import {globalStyles} from '~/styles';
 import HomeNavBar from '~/components/screen/HomeNavBar.tsx';
@@ -7,12 +7,14 @@ import HomeNavBar from '~/components/screen/HomeNavBar.tsx';
 export default function Orders(): React.JSX.Element {
   return (
     <CustomScreenContainer style={styles.screenContainer}>
-      <HomeNavBar />
-      <View style={styles.container}>
+      <View style={[styles.navbarWrapper]}>
+        <HomeNavBar />
+      </View>
+      <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.title}>
           The{'\n'}Orders{'\n'}screen
         </Text>
-      </View>
+      </ScrollView>
     </CustomScreenContainer>
   );
 }
@@ -33,4 +35,5 @@ const styles = StyleSheet.create({
   navbar: {
     marginHorizontal: 20,
   },
+  navbarWrapper: {paddingTop: 24},
 });
