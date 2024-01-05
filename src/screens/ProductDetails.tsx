@@ -55,7 +55,9 @@ export default function ProductDetails(): React.JSX.Element {
   return (
     <CustomScreenContainer edges={['top']}>
       <ScreenNavBar title={product?.name} />
-      <ScrollView contentContainerStyle={styles.container}>
+      <ScrollView
+        contentContainerStyle={styles.container}
+        showsVerticalScrollIndicator={false}>
         <View style={styles.sectionItem}>
           <Image
             source={{uri: product.image}}
