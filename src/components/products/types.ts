@@ -5,6 +5,7 @@ export type ProductDataType = {
   image: string;
   reviews: {rating: string; comments: Array<number>};
   price: {value: number; currency: string; unit: string};
+  category: string;
 };
 
 export type ProductType = {

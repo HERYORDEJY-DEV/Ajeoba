@@ -61,6 +61,9 @@ export default function HomeProductsList(props: Props): React.JSX.Element {
           {section.data.map((product, index) => {
             return (
               <TouchableOpacity
+                onPress={() =>
+                  navigation.navigate('ProductDetails', {product: product})
+                }
                 style={styles.sectionItem}
                 key={`${product.name}-${index}`}>
                 <Image
@@ -217,6 +220,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Chicken',
@@ -231,6 +235,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Lamb',
@@ -244,6 +249,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Cow',
@@ -258,6 +264,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Goat',
@@ -272,6 +279,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Chicken',
@@ -286,6 +294,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Lamb',
@@ -299,6 +308,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
       {
         name: 'Cow',
@@ -313,6 +323,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Livestock',
       },
     ],
   },
@@ -332,6 +343,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Refrigerated',
       },
       {
         name: 'Mango',
@@ -346,6 +358,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Refrigerated',
       },
       {
         name: 'Orange',
@@ -360,6 +373,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Refrigerated',
       },
       {
         name: 'Pear',
@@ -374,6 +388,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Refrigerated',
       },
     ],
   },
@@ -393,6 +408,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Dry',
       },
       {
         name: 'Beans',
@@ -407,6 +423,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Dry',
       },
       {
         name: 'Rice',
@@ -421,6 +438,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Dry',
       },
       {
         name: 'Cassava',
@@ -435,6 +453,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Dry',
       },
     ],
   },
@@ -454,6 +473,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Agro Fertilizer',
@@ -468,6 +488,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pepper Seeds',
@@ -482,6 +503,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Herbicides',
@@ -496,6 +518,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pesticides',
@@ -510,6 +533,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
 
       {
@@ -525,6 +549,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Agro Fertilizer',
@@ -539,6 +564,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pepper Seeds',
@@ -553,6 +579,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Herbicides',
@@ -567,6 +594,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pesticides',
@@ -581,6 +609,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Agro Fertilizer',
@@ -595,6 +624,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pepper Seeds',
@@ -609,6 +639,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Herbicides',
@@ -623,6 +654,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pesticides',
@@ -637,6 +669,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
 
       {
@@ -652,6 +685,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Agro Fertilizer',
@@ -666,6 +700,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pepper Seeds',
@@ -680,6 +715,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Herbicides',
@@ -694,6 +730,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
       {
         name: 'Pesticides',
@@ -708,6 +745,7 @@ const data: Array<ProductType> = [
           currency: '₦',
           unit: 'kg',
         },
+        category: 'Farm Input',
       },
     ],
   },

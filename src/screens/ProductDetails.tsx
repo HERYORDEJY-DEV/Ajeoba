@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useState} from 'react';
 import {
   Image,
   ScrollView,
@@ -16,6 +16,9 @@ import StarRating from 'react-native-star-rating-widget';
 import {globalStyles} from '~/styles';
 import {svgAssets} from '~/assets';
 import ReadMore from '@fawazahmed/react-native-read-more';
+import QuantityButton from '~/components/buttons/QuantityButton.tsx';
+import PrimaryButton from '~/components/buttons/PrimaryButton.tsx';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const {
   StarFillIcon,
@@ -27,12 +30,14 @@ const {
 } = svgAssets;
 
 export default function ProductDetails(): React.JSX.Element {
+  const safeAreaInset = useSafeAreaInsets();
   const navigation =
     useNavigation<
       NativeStackNavigationProp<MainStackParamList, 'ProductDetails'>
     >();
   const route = useRoute<RouteProp<MainStackParamList, 'ProductDetails'>>();
   const product = route.params?.product;
+  const [quantity, setQuantity] = useState(1);
 
   const renderBadge = useCallback(
     (title: string, color: string, containerStyle?: ViewStyle) => {
@@ -55,7 +60,7 @@ export default function ProductDetails(): React.JSX.Element {
   }, []);
 
   return (
-    <CustomScreenContainer>
+    <CustomScreenContainer edges={['top']}>
       <ScreenNavBar title={product?.name} />
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.sectionItem}>
@@ -64,7 +69,7 @@ export default function ProductDetails(): React.JSX.Element {
             style={styles.sectionItemImage}
           />
           <View style={styles.livestockBadge}>
-            {renderBadge('Livestock', '#DB371F', {
+            {renderBadge(product?.category, '#DB371F', {
               paddingHorizontal: 10,
               paddingVertical: 4,
             })}
@@ -166,6 +171,11 @@ export default function ProductDetails(): React.JSX.Element {
           </View>
         </View>
       </ScrollView>
+
+      <View style={[styles.bottom, {paddingBottom: safeAreaInset.bottom}]}>
+        <QuantityButton value={quantity} onChange={setQuantity} />
+        <PrimaryButton title={'Proceed to purchase'} />
+      </View>
     </CustomScreenContainer>
   );
 }
@@ -401,5 +411,13 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 16,
     right: 16,
+  },
+  bottom: {
+    flexDirection: 'row',
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    columnGap: 20,
+    backgroundColor: globalStyles.colors.white,
+    width: '100%',
   },
 });

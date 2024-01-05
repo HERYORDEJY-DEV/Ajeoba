@@ -15,6 +15,6 @@ export const colors = {
   colorsPrimaryPrimary400: '#006D33',
   colorsGrayGray50: '#BEBEBE',
   foundationGreyGrey300: '#686868',
-
+  colorsButtonLabelPrimary: '#FFFFFF',
   screenBackground: '#F8F8F8',
 };
