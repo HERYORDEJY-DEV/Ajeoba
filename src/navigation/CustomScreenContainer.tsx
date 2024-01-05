@@ -15,10 +15,7 @@ export default function CustomScreenContainer({
   const isDarkMode = useThemeMode();
   return (
     <SafeAreaView style={[styles.container, props.style]} edges={props.edges}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={'transparent'}
-      />
+      <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} />
       <>{props.children}</>
     </SafeAreaView>
   );
