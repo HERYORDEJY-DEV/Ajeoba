@@ -80,4 +80,7 @@ If everything is set up _correctly_, you should see your new app running in your
 - Product details screen
 
 ## Screenshots and demos
+[DEMO 1](https://github.com/HERYORDEJY-DEV/Ajeoba/assets/84506124/d75ee5b3-5625-4529-af32-00d83155c840)
+
+[DEMO 1](https://github.com/HERYORDEJY-DEV/Ajeoba/assets/84506124/9d749518-ef98-421d-87a1-ed32f4bcc7d3)
 
