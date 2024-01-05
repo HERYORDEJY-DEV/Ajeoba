@@ -2,6 +2,7 @@ import * as React from 'react';
 import {useRef} from 'react';
 import {
   ImageBackground,
+  Linking,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -20,6 +21,7 @@ import Animated, {
 import PaginatorIndicator from '~/components/screen/PaginatorIndicator.tsx';
 
 interface Props extends ViewProps {
+  containerStyle?: ViewStyle;
   contentContainerStyle?: ViewStyle;
 }
 
@@ -40,7 +42,6 @@ export default function HomeProductsCarousel(props: Props): React.JSX.Element {
     onScroll: event => {
       const {x} = event.contentOffset;
       sharedValue.value = x;
-      //   onLayout(event);
     },
   });
   const renderItem = (item: ItemContent, index: number) => {
@@ -52,7 +53,8 @@ export default function HomeProductsCarousel(props: Props): React.JSX.Element {
           {
             width: itemWidth,
           },
-        ]}>
+        ]}
+        onPress={() => Linking.openURL('https://ajeoba.com/')}>
         <ImageBackground
           style={[styles.imageBackground]}
           source={{uri: item.image}}>
@@ -72,10 +74,10 @@ export default function HomeProductsCarousel(props: Props): React.JSX.Element {
   };
 
   return (
-    <Animated.View style={[styles.container, props.style]}>
+    <Animated.View style={[styles.container, props.containerStyle]}>
       <Animated.ScrollView
-        ref={scrollRef}
         horizontal
+        ref={scrollRef}
         onScroll={onScrollHandler}
         showsHorizontalScrollIndicator={false}
         snapToInterval={itemWidth}
@@ -89,9 +91,6 @@ export default function HomeProductsCarousel(props: Props): React.JSX.Element {
       </Animated.ScrollView>
 
       <View style={styles.indicatorContainer}>
-        {/*{data.map((item, index) => {*/}
-        {/*  return <Animated.View style={[styles.indicatorDot]} key={index} />;*/}
-        {/*})}*/}
         {[...data].map((_, index) => (
           <PaginatorIndicator
             key={`${index}`}

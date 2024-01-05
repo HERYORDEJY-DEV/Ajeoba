@@ -1,3 +1,5 @@
+import {ProductDataType, ProductType} from '~/components/products/types.ts';
+
 export type TabStackParamList = {
   Home: undefined;
   Orders: undefined;
@@ -7,7 +9,8 @@ export type TabStackParamList = {
 
 export type MainStackParamList = {
   Tab: undefined;
-  ProductDetails: undefined;
+  ProductDetails: {product: ProductDataType};
+  ProductList: {products: ProductType};
 };
 
 export enum TabStackScreen {

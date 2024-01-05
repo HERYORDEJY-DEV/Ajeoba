@@ -48,7 +48,7 @@ export default function PaginatorIndicator({...props}: Props) {
   return (
     <Pressable
       onPress={() => props.onPressActive?.(props.dotIndex)}
-      style={{paddingVertical: 5, ...props.containerStyles}}>
+      style={{...props.containerStyles}}>
       <Animated.View
         key={`${props.dotIndex}`}
         style={{

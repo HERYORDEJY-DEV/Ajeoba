@@ -15,6 +15,11 @@ import NotificationIcon from './svgs/icons/ic-notification.svg';
 import FilterIcon from './svgs/icons/ic-filter.svg';
 import HomeAvatar from './svgs/illustrations/avatar.svg';
 import HandWave from './svgs/illustrations/hand-wave.svg';
+import StarFillIcon from './svgs/icons/ic-star-filled.svg';
+import StarHalfIcon from './svgs/icons/ic-star-half.svg';
+import StarEmptyIcon from './svgs/icons/ic-star-empty.svg';
+import ChevronLeftIcon from './svgs/icons/ic-chevron-left.svg';
+import ChevronUpIcon from './svgs/icons/ic-chevron-up.svg';
 
 export const svgAssets = {
   HomeTabIcon,
@@ -34,6 +39,11 @@ export const svgAssets = {
   NotificationIcon,
   FilterIcon,
   HandWave,
+  StarFillIcon,
+  StarHalfIcon,
+  StarEmptyIcon,
+  ChevronLeftIcon,
+  ChevronUpIcon,
 };
 
 export const imageAssets = {
